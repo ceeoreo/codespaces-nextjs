@@ -2,6 +2,7 @@ import { useCallback, useEffect, useState } from 'react'
 import Button from '../components/Button'
 import ClickCount from '../components/ClickCount'
 import styles from '../styles/home.module.css'
+import LoginLogout from '../components/LoginLogout'
 
 function throwError() {
   console.log(
@@ -62,6 +63,13 @@ function Home() {
         >
           Throw an Error
         </Button>
+      </div>
+      <hr className={styles.hr} />
+      <div>
+        <p>
+          The button below will log you in and out of your application
+        </p>
+        <LoginLogout />
       </div>
       <hr className={styles.hr} />
     </main>
